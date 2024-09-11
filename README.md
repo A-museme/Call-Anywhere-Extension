@@ -43,6 +43,17 @@ You can configure the following settings in the extension popup:
 2. Base URL: The base URL for the Feeding Frenzy API
 3. User ID: Your Feeding Frenzy user ID
 
+You need to set these fields to match your VOIP Phone Number, Base URL, and User ID (Sales Representative ID)
+
+## Click on the Extension:
+![image](https://github.com/user-attachments/assets/f77d4d84-eea9-465f-a676-c2ebb28fbfad)
+
+## Click on settings, and update the fields:
+![image](https://github.com/user-attachments/assets/67b52df3-4e0d-43bf-8143-69e07dc7eda9)
+
+
+
+
 ## Known Issues and Limitations
 
 1. Google Sign-In is currently mocked and not fully implemented
