@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
+        body { font-family: 'IBM Plex Sans', sans-serif; width: 300px; height: 400px; }
+        .container { max-width: 300px; margin: 0 auto; padding: 20px; }
+        h1 { font-size: 18px; }
+        label { display: block; margin-top: 10px; font-size: 14px; color: #6C757D; }
+        input { width: 100%; padding: 8px; margin-top: 5px; font-size: 14px; }
+        .btn-outline-primary { background-color: white; color: #007bff; border: 1px solid #007bff; }
+        .btn-outline-primary:hover { background-color: #007bff; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+        <div class="form-group">
+            <label for="voipPhoneNumber">Voip Phone Number</label>
+            <input type="text" class="form-control" id="voipPhoneNumber" placeholder="Enter Voip Phone Number">
+        </div>
+        <div class="form-group">
+            <label for="baseUrl">Base URL</label>
+            <input type="text" class="form-control" id="baseUrl" placeholder="Enter Base URL">
+        </div>
+        <div class="form-group">
+            <label for="userId">User ID</label>
+            <input type="text" class="form-control" id="userId" placeholder="Enter User ID">
+        </div>
+        <button id="saveSettings" class="btn btn-outline-primary">Save Settings</button>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>

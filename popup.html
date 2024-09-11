@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extension Menu</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap');
+        body { font-family: 'IBM Plex Sans', sans-serif; padding: 10px; width: 300px; height: 400px; }
+        .dropdown-menu { width: 100%; }
+        .dropdown-item:hover { background-color: #f8f9fa; }
+        .section { display: none; }
+        .section.active { display: block; }
+        .dropdown-item .icon { float: left; width: 16px; height: 16px; margin-right: 10px; }
+        .btn-icon { display: inline-flex; align-items: center; background-color: #007bff; border: none; padding: 5px; border-radius: 50%; }
+        .btn-icon img { width: 16px; height: 16px; filter: invert(1); }
+        .divider { border-bottom: 1px solid #e0e0e0; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div id="mainMenu" class="section active">
+        <div class="dropdown">
+            <ul class="dropdown-menu show" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#" data-target="settingsSection"><img src="icons/settings.svg" class="icon" alt="Settings Icon">Settings</a></li>
+                <div class="divider"></div>
+                <li><a class="dropdown-item" href="#"><img src="icons/settings.svg" class="icon" alt="Placeholder 1 Icon">Placeholder 1</a></li>
+                <div class="divider"></div>
+                <li><a class="dropdown-item" href="#"><img src="icons/settings.svg" class="icon" alt="Placeholder 2 Icon">Placeholder 2</a></li>
+                <div class="divider"></div>
+                <li><a class="dropdown-item" href="#"><img src="icons/settings.svg" class="icon" alt="Placeholder 3 Icon">Placeholder 3</a></li>
+                <div class="divider"></div>
+                <li><a class="dropdown-item" href="#"><img src="icons/settings.svg" class="icon" alt="Placeholder 4 Icon">Placeholder 4</a></li>
+                <div class="divider"></div>
+                <li><a class="dropdown-item" href="#"><img src="icons/settings.svg" class="icon" alt="Placeholder 5 Icon">Placeholder 5</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="settingsSection" class="section">
+        <button id="backToMenu" class="btn btn-icon">
+            <img src="icons/leftarrowcircle.svg" alt="Back Icon">
+        </button>
+        <h4>Settings</h4>
+        <div class="form-group">
+            <label for="voipPhoneNumber">Voip Phone Number</label>
+            <input type="text" class="form-control" id="voipPhoneNumber" placeholder="Enter Voip Phone Number">
+        </div>
+        <div class="divider"></div>
+        <div class="form-group">
+            <label for="baseUrl">Base URL</label>
+            <input type="text" class="form-control" id="baseUrl" placeholder="Enter Base URL">
+        </div>
+        <div class="divider"></div>
+        <div class="form-group">
+            <label for="userId">User ID</label>
+            <input type="text" class="form-control" id="userId" placeholder="Enter User ID">
+        </div>
+        <div class="divider"></div>
+        <button id="saveSettings" class="btn btn-outline-primary">Save Settings</button>
+    </div>
+
+    <script src="libs/jquery-3.7.1.min.js"></script>
+    <script src="libs/bootstrap.bundle.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
