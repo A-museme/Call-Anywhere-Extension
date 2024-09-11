@@ -22,10 +22,9 @@ The Feeding Frenzy Call Anywhere Extension is a Chrome browser extension that de
 
 1. After installation, you'll see the extension icon in your Chrome toolbar
 2. Click the icon to open the extension popup
-3. Sign in using your Google account (currently mocked for demonstration purposes)
-4. Configure your settings in the Settings section
-5. Browse any webpage, and the extension will automatically detect phone numbers
-6. Click the phone icon next to a detected number to initiate a call
+3. Configure your settings in the Settings section
+4. Browse any webpage, and the extension will automatically detect phone numbers
+5. Click the phone icon next to a detected number to initiate a call
 
 ## How It Works
 
@@ -56,10 +55,9 @@ You need to set these fields to match your VOIP Phone Number, Base URL, and User
 
 ## Known Issues and Limitations
 
-1. Google Sign-In is currently mocked and not fully implemented
-2. The extension may not detect phone numbers in complex page layouts or dynamically loaded content
-3. The extension doesn't handle international phone number formats comprehensively
-4. There's no error handling for network issues or API failures in the popup UI
+1. The extension may not detect phone numbers in complex page layouts or dynamically loaded content
+2. The extension doesn't handle international phone number formats comprehensively
+3. There's no error handling for network issues or API failures in the popup UI
 
 ## Security Considerations
 
